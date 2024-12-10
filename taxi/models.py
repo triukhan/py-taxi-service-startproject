@@ -6,7 +6,7 @@ class Driver(AbstractUser):
     license_number = models.CharField(max_length=63, unique=True)
 
     def __str__(self):
-        return self.first_name, self.last_name, self.license_number
+        return self.username
 
 class Manufacturer(models.Model):
     name = models.CharField(max_length=63)
